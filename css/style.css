@@ -61,6 +61,8 @@ body{
     text-decoration: none;
     color: #2c71b8;
     transition: 0.3s linear;
+    font-size: 21px;
+    font-weight: 300;
 }
 .menu>li>a:hover{
     background-color: #2c71b8;
@@ -92,5 +94,54 @@ body{
     top: 20px;
 }
     
+/* input & basket */
+.input,.basket{
+    float: left;
+}
+.input{
+    width: 86.66666666%;
+}
+.basket{
+    width: 13.333333333%;
+}
 
 
+/* input */
+
+.input{
+    text-align: center;
+    position: relative;
+}
+/* input fild */
+.input_field{
+    padding: 11px 10px;
+    border: 1px solid #2c71b8;
+    height: 40px;
+    margin-top: 5px;  
+    color: #0863be; 
+    
+}
+.input_field::placeholder{
+    font-size: 21px;
+    color: #2c71b8;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* input_btn */
+.input_btn{
+    position: absolute;
+    top: 10px;
+    right: 36px;
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    outline: none;
+    border: none;
+    background-image: url(../img/icon/icon\ \(4\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.input_btn:hover{
+    cursor: pointer;
+}
