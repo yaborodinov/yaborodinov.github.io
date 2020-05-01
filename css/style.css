@@ -49,6 +49,7 @@ body{
     float: left;
     height: 50px;
     border-left: 1px solid #2c71b8;
+    
 }
 .menu>li:last-child{
     border-right: 1px solid #2c71b8;
@@ -59,9 +60,37 @@ body{
     line-height: 50px;
     text-decoration: none;
     color: #2c71b8;
-    transition: 0.4s linear;
+    transition: 0.3s linear;
 }
 .menu>li>a:hover{
     background-color: #2c71b8;
     color: white;
 }
+
+
+/* arrow */
+.menu>li:nth-child(2)>a{
+    position: relative;
+}
+.menu>li:nth-child(2)>a::after{ 
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #2c71b8;
+    border-top: 2px solid #2c71b8;
+    position: absolute;
+    transform: rotateZ(-45deg);
+    right: 15px;
+    top: 25px;
+    transition: .3s linear;
+}
+
+.menu>li:nth-child(2)>a:hover::after{
+    transform: rotateZ(135deg);
+    border-color: #fff;
+    top: 20px;
+}
+    
+
+
