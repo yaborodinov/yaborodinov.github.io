@@ -28,10 +28,10 @@ body{
     clear: both;
 }
 .col-md-3{
-    width: 25%;
+    width: 300px;
 }
 .col-md-6{
-    width: 50%;
+    width: 570px;
 }
 [class*="col-"]{
     float: left;
@@ -137,12 +137,14 @@ body{
 /* input */
 
 .input{
+   
     text-align: center;
     position: relative;
 }
 /* input fild */
 .input_field{
-    padding: 11px 10px;
+    padding: 10px 45px 10px 10px;
+    width: 200px;
     border: 1px solid #2c71b8;
     height: 40px;
     margin-top: 5px;  
