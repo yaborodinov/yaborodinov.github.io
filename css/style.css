@@ -50,6 +50,7 @@ body{
     float: left;
     height: 50px;
     border-left: 1px solid #2c71b8;
+    position: relative;
     
 }
 .menu>li:last-child{
@@ -64,14 +65,13 @@ body{
     transition: 0.3s linear;
     font-size: 21px;
     font-weight: 300;
+    
 }
 .menu_item:hover{
     background-color: #2c71b8;
     color: white;
 }
-.products{
-    position: relative;
-}
+
 
 .menu > li:hover > a {
     background:#2c71b8;
@@ -97,7 +97,7 @@ body{
 }
 
 
-.products:hover > .sub_menu,
+.menu>li:hover > .sub_menu,
 .sub_menu:hover{
     opacity: 1;
     visibility: visible;
