@@ -291,7 +291,7 @@ body{
     float: left;
 
 }
-.info_link_list>li>a, .info_link_list>li:nth-child(3)>p{
+.info_link_list>li>a{
     text-decoration: none;
     line-height: 70px;
     color: #fff;
@@ -467,7 +467,8 @@ body{
     font-weight: 700;
     margin: 15px;
 }
-.goods_information>h3{
+.goods_information_desc,
+.goosd_information_parametr{
     font-size: 21px;
     font-weight: 300;
     margin: 15px;
