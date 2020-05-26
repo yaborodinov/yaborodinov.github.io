@@ -257,13 +257,67 @@ body{
 
 /* sidebar */
 .sidebar{
-    height: 842px;
+    /* height: 842px; */
     border: 1px solid #fff;
     background-color: rgba(255, 255, 255, 0.1);
-    
-    
+}
+.sidebar_conteiner{
+    width: 210px;
+    margin: 0 auto;
 }
 
+.filter_title{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+}
+.device_type{
+    margin-top: 32px;
+}
+.color, .ram{
+    margin-top: 60px;
+}
+
+.filter_subtitle{
+    margin: 24px 0;
+}
+.filter_subtitle>input{
+    display: none;
+}
+
+.filter_subtitle>label{
+    display: block;
+    margin-left: 24px;
+    color: #fff;
+    position: relative;
+    font-size: 21px;
+    font-weight: 300;
+    cursor: pointer;
+    
+}
+.filter_subtitle>label::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 1px solid #fff;
+    top: 50%;
+    transform: translatey(-5px);
+    left: -24px;
+}
+.filter_subtitle>input[type="checkbox"]:checked + label::before{
+    background-color: #fff;
+    transition: 0.1s linear;
+}
+.sidebar_footer{
+    font-size: 21px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
 /* info_link */
@@ -459,7 +513,7 @@ body{
     margin: 15px;
 }
 .goods_information_desc,
-.goosd_information_parametr{
+.goods_information_parametr{
     font-size: 21px;
     font-weight: 300;
     margin: 15px;
@@ -482,7 +536,7 @@ body{
 
 /* button */
 
-.goods_information>button{
+.goods_information>button, .sidebar_btn{
     display: block;
     margin: 15px auto;
     width: 210px;
@@ -495,7 +549,7 @@ body{
     color: #fff;
 }
 
-.goods_information>button>span{
+.goods_information>button>span, .sidebar_btn>span{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     
@@ -515,7 +569,7 @@ body{
     transition: 0.1s linear;
     padding-left: 12px;
 }
-.goods_information>button:hover{
+.goods_information>button:hover, .sidebar_btn:hover{
     color: #2c71b8 ;
     background-color: #fff;
 }
