@@ -255,24 +255,15 @@ body{
 }
 
 
-/* left_side */
-.left_side{
+/* sidebar */
+.sidebar{
     height: 842px;
     border: 1px solid #fff;
     background-color: rgba(255, 255, 255, 0.1);
-    position: relative;
     
     
 }
-.left_side>p{
-    position: absolute;
-    font-size: 46px;
-    color: rgba(185, 179, 179, 0.486);
-    transform: rotateZ(-40deg);
-    left: -20px;
-    top: 146px;
-    text-align: center;
-}
+
 
 
 /* info_link */
