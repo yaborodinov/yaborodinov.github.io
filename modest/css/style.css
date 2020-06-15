@@ -182,13 +182,13 @@ display: none;
 }
 
 /* we_are_col456 */
-.we_are_section_text{
+/* .we_are_section_text{
     /* overflow: hidden; */
-}
-.we_are_col456{
+/* } */ */
+/* .we_are_col456{
     /* width: 456px; */
     /* overflow: hidden; */
-}
+} */
 .we_are_mission{
     display: inline-flex;
     margin-bottom: 40px;
