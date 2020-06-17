@@ -1,0 +1,68 @@
+.col-xs-12{
+    width: 100%;
+}
+.col-xs-3{
+    width: 263px;
+}
+.col-xs-4{
+    width: 320px;
+}
+
+
+
+
+
+
+
+
+/* tablet */
+@media(min-width:768px){
+.col-sm-12{
+    width: 100%;
+}
+.col-sm-4{
+    width: 360px;
+}
+}
+
+
+
+
+
+
+
+/* laptop */
+@media(min-width:992px){
+.col-md-12{
+    width: 100%;
+}
+.col-md-7{
+    width: 58.333333%;
+}
+.col-ms-5{
+    width: 41.66666666%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* desktop */
+@media(min-width:1200px){
+.col-lg-12{
+    width: 100%;
+}
+.col-lg-7{
+    width: 58.333333%;
+}
+.col-lg-5{
+    width: 41.6666666%;
+}
+
+}
