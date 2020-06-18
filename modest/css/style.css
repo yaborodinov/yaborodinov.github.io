@@ -189,7 +189,6 @@ hr{
     background-color: #e1e6ea;
     position: relative;
     margin-bottom: 20px;
-   
 }
 
 .member_name{
@@ -489,6 +488,13 @@ hr{
 .team{
     flex-direction: column;
     align-items: center;
+}
+.socials_item{
+    width: 50px;
+    height: 50px;
+}
+.socials_item>img{
+    padding: 0;
 }
 /* work */
 .work_row{
