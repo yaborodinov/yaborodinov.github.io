@@ -81,7 +81,6 @@ body{
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 .search_bnt{
     position: absolute;
@@ -468,11 +467,17 @@ hr{
     
     
 }
+.search{
+    padding: 5px 50px 5px 10px;
+}
+.search_bnt{
+    transform: translatey(-13px)
+}
 .nav_menu::-webkit-scrollbar{
     display: none;
 }
 .nav_menu::-moz-scrollbar{
-display: none;
+    display: none;
 }
 .col{
     margin-bottom: 10px;
