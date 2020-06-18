@@ -4,9 +4,9 @@
 .col-xs-3{
     width: 263px;
 }
-.col-xs-4{
-    width: 320px;
-}
+/* .col-xs-4{
+    width: 220px;
+} */
 
 
 
@@ -21,7 +21,7 @@
     width: 100%;
 }
 .col-sm-4{
-    width: 360px;
+    width: 300px;
 }
 }
 
@@ -41,6 +41,9 @@
 }
 .col-ms-5{
     width: 41.66666666%;
+}
+.col-md-4{
+    width: 360px;
 }
 
 
