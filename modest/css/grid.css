@@ -4,6 +4,12 @@
 .col-xs-3{
     width: 263px;
 }
+.col-xs-1{
+    width: 33%;
+}
+.col-xs-2{
+    width: 66%;
+}
 /* .col-xs-4{
     width: 220px;
 } */

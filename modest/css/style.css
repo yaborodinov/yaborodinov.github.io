@@ -334,12 +334,7 @@ hr{
 }
 
 
-
-
-
 /* btn */
-
-
 .work_btn{
     display: flex;
     justify-content: center;
@@ -361,6 +356,26 @@ hr{
     background-color: #23b7a4;
     border: none;
     transition: 0.2s linear;
+}
+
+/* services */
+.services_row{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.services_col{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.services_subtitle{
+    margin: 30px 0;
+    color: #292f36;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+
 }
 
 
@@ -478,9 +493,9 @@ hr{
 .nav_menu::-moz-scrollbar{
     display: none;
 }
-.col{
+/* .col{
     margin-bottom: 10px;
-}
+} */
 .section_title>h2{
     margin: 60px 0;
     font-size: 30px;
@@ -501,7 +516,9 @@ hr{
     flex-direction: column;
     justify-content: space-around;
 }
-
+/* services */
+.services_row{
+}
 
 
 }
