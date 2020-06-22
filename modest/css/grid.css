@@ -51,6 +51,9 @@
 .col-md-4{
     width: 360px;
 }
+.col-md-6{
+    width: 50%;
+}
 
 
 }
