@@ -283,9 +283,13 @@ hr{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.work_row>div.work_col, .features_col{
+.work_row>div.work_col{
     margin-bottom: 30px;
     position: relative;
+}
+.features_col{
+    margin-bottom: 60px;
+    position: relative; 
 }
 .work_img_text{
     bottom: 0;
