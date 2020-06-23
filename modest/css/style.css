@@ -349,6 +349,7 @@ hr{
 }
 .btn{
     margin-top: 40px;
+    margin-bottom: 0;
     margin-right: 11px;
     height: 44px;
     width: 146px;
@@ -579,9 +580,11 @@ justify-content: flex-end;
 .nav_menu::-moz-scrollbar{
     display: none;
 }
-/* .col{
-    margin-bottom: 10px;
-} */
+
+/* section */
+.section{
+    padding:10px  0;
+}
 .section_title>h2{
     margin: 60px 0;
     font-size: 30px;
@@ -597,10 +600,17 @@ justify-content: flex-end;
 .socials_item>img{
     padding: 0;
 }
+.about_socials{
+    margin-bottom: 50px;
+}
 /* work */
 .work_row, .features_row{
     flex-direction: column;
     justify-content: space-around;
+}
+.btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* services */
 .map-responsive{
