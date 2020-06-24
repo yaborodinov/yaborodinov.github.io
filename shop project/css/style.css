@@ -493,6 +493,10 @@ body{
     z-index: 20;
     transition: 0.3s linear;
 }
+.wish-active{
+    background-image: url(../img/icon/icon7.png);
+    background-color: #2c71b8;
+}
 .wish:hover{
     background-image: url(../img/icon/icon7.png);
     background-color: #2c71b8;
