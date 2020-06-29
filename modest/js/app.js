@@ -1,10 +1,18 @@
 'use strict'
 
+// let navButtons = document.querySelectorAll(".nav_menu_item");
+// console.log(navButtons)
+// for (let i = 0; i < navButtons.length; i++){
+//     navButtons[i].addEventListener("click", function () {
+//         this.classList.toggle("nav_menu_active")
+//     })
+// }
 let navButtons = document.querySelectorAll(".nav_menu_item");
-console.log(navButtons)
 for (let i = 0; i < navButtons.length; i++){
-    navButtons[i].addEventListener("click", function () {
-        this.classList.toggle("nav_menu_active")
+    navButtons[i].addEventListener("click", function () { 
+        let current = document.getElementsByClassName("nav_menu_active");
+        current[0].className = current[0].className.replace("nav_menu_active", "");
+        this.className += "nav_menu_active";
     })
 }
 
