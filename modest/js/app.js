@@ -31,3 +31,24 @@ for (let anchor of anchors) {
         })
     })
 }
+
+
+// modal
+let sendMessageButton = document.querySelectorAll("#send_message");
+let modalSendMessage = document.querySelector(".modal");
+
+sendMessageButton.forEach(function (bnt) {
+    bnt.addEventListener("click", function () {
+        modalSendMessage.classList.add("show")
+        modalSendMessage.classList.remove("hide")
+    })
+})
+function closeModalSendMessage() {
+    modalSendMessage.classList.add("hide")
+    modalSendMessage.classList.remove("show")
+}
+modalSendMessage.addEventListener("click", function (e) {
+    if (e.target === modalSendMessage) {
+        closeModalSendMessage()
+    }
+})

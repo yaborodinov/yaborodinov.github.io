@@ -457,6 +457,63 @@ justify-content: flex-end;
     background-image: url(../img/icon\ 15.png);
 }
 
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eaeef1de;
+    z-index: 103322;
+    display: none;
+}
+.modal_block{
+    max-width: 555px;
+    margin: 100px auto;
+    height: 350px;
+    border: 1px #ccc;
+    background-color: #fff;
+}
+.modal_block_row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal_fields_title{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    color: #8d8f92;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.input_field{
+    padding: 8px;
+    background-color: #eaeef1;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d8f92;
+}
+.modal textarea{
+    max-height: 70px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 
 
 
@@ -504,6 +561,16 @@ justify-content: flex-end;
 }
 .btn_row{
     justify-content: center;
+}
+/* modal */
+.modal_block_row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.modal textarea{
+    width: 400px;
 }
 
 
@@ -630,3 +697,6 @@ justify-content: flex-end;
 }
 
 }
+
+
+

@@ -446,7 +446,7 @@
                     
                     
                     <div class="col row btn_row col-xs-12 col-sm-12 col-md-6 ">
-                        <button class="btn contact_btn">send message</button>
+                        <button class="btn contact_btn" id="send_message">send message</button>
                     </div>
                 </div>
            </div>
@@ -476,6 +476,37 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="container">
+            <div class="modal_block">
+                <form action="" class="action">
+                    <div class="row col modal_block_row">
+                        <div class="col">
+                            <h3 class="modal_fields_title">Your name</h3>
+                            <div class="form_fields">
+                                <input class="input_field input_field_main col-xs-12" type="text" >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="modal_fields_title">Your Email</h3>
+                            <div class="form_fields">
+                                <input class="input_field input_field_main col-xs-12" type="email" name="tel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="modal_fields_title">Your message</h3>
+                            <textarea class="input_field" name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                        
+                    </div>
+                    <button class="btn contact_btn"><span> Write us</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
     
