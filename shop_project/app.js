@@ -27,13 +27,42 @@ function changeImg() {
 
 
 // wish=======
-let wishElement = document.querySelectorAll(".wish");
-for (let i = 0; i < wishElement.length; i++){
-    wishElement[i].addEventListener("click", function () {
-        if (wishElement[i].className == "wish wish-active") {
-            wishElement[i].classList.remove("wish-active")
-        } else {
-            wishElement[i].classList.add("wish-active")
-        }
+// let wishElement = document.querySelectorAll(".wish");
+// for (let i = 0; i < wishElement.length; i++){
+//     wishElement[i].addEventListener("click", function () {
+//         if (wishElement[i].className == "wish wish-active") {
+//             wishElement[i].classList.remove("wish-active")
+//         } else {
+//             wishElement[i].classList.add("wish-active")
+//         }
+//     })
+// }
+let likeButtons = document.querySelectorAll(".wish");
+for (let i = 0; i < likeButtons.length; i++){
+    likeButtons[i].addEventListener("click", function () {
+        this.classList.toggle('liked');
     })
+    
 }
+
+// modal
+let moreDetailsButtons = document.querySelectorAll(".more_details")
+let modal = document.querySelector(".modal")
+let closeBtn = document.querySelector(".btn_close");
+moreDetailsButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        modal.classList.add("show")
+        modal.classList.remove("hide")
+    })
+})
+
+function closeModal() {
+    modal.classList.add("hide")
+    modal.classList.remove('show')
+}
+closeBtn.addEventListener("click", closeModal);
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+        closeModal()
+    }
+})
