@@ -505,7 +505,7 @@ justify-content: flex-end;
     color: #8d8f92;
 }
 .modal textarea{
-    max-height: 70px;
+    height: 70px;
 }
 .hide{
     display: none;
@@ -571,6 +571,7 @@ justify-content: flex-end;
 }
 .modal textarea{
     width: 400px;
+    height: 150px;
 }
 
 
