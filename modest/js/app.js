@@ -60,3 +60,34 @@ modalSendMessage.addEventListener("mouseover", function (e) {
         backBackgroundModal()
     }
 })
+
+
+
+
+
+
+
+// message
+let modalDiscount = document.querySelector(".message")
+// function getCoords(elem) {
+//     let box = elem.getBoundingClientRect();
+//     return {
+//         top: box.top + pageYOffset
+//     }
+// }
+// console.log(getCoords(pageHtml))
+
+
+
+window.addEventListener('scroll', function () {
+    let a = pageYOffset+ "px";
+    if (a > 1000) {
+        modalDiscount.classList.add("show")
+        
+        
+    } else {
+        
+        
+    }
+    
+});

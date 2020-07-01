@@ -457,7 +457,7 @@ justify-content: flex-end;
     background-image: url(../img/icon\ 15.png);
 }
 
-/* modal */
+/* modal =========================================*/ 
 .modal{
     position: fixed;
     top: 0;
@@ -465,12 +465,10 @@ justify-content: flex-end;
     width: 100%;
     height: 100%;
     background-color: #eaeef1de;
-    z-index: 103322;
+    z-index: 40;
     display: none;
 }
-.modal:hover{
-    background-color: #eaeef1bb;
-}
+
 .modal_block{
     max-width: 555px;
     margin: 100px auto;
@@ -516,7 +514,51 @@ justify-content: flex-end;
 .show{
     display: block;
 }
-
+/* message ===============================*/ 
+.message{
+    position: fixed;
+    top: 117px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eaeef1de;
+    z-index: 40;
+    display: none;
+}
+.message_block{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    max-width: 400px;
+    padding: 25px;
+}
+.message_conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message_social_row{
+    justify-content: center;
+    margin-top: 20px;
+}
+.message_title{
+    border: none;
+    text-align: center;
+}
+.message_title span{
+    font-size: 44px;
+    color: red;
+}
+.message_footer_social{
+    width: 30px;
+    height: 30px;
+    background-size: 200%;
+}
+.message_footer_social:hover{
+    box-shadow: 0 1px 7px #fff;
+    transition: 0.1s linear;    
+}
 
 
 
@@ -576,7 +618,13 @@ justify-content: flex-end;
     width: 400px;
     height: 150px;
 }
-
+/* message===== */
+.message{
+    top: 127px;
+}
+.message_conteiner{
+    align-items: flex-end;
+}
 
 }
 
@@ -602,6 +650,10 @@ justify-content: flex-end;
 
 .about_socials{
     justify-content: flex-start;
+}
+/* message========= */
+.message{
+    top: 80px;
 }
 }
 
