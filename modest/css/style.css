@@ -468,6 +468,9 @@ justify-content: flex-end;
     z-index: 103322;
     display: none;
 }
+.modal:hover{
+    background-color: #eaeef1bb;
+}
 .modal_block{
     max-width: 555px;
     margin: 100px auto;

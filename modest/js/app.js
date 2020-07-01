@@ -1,12 +1,6 @@
 'use strict'
 
-// let navButtons = document.querySelectorAll(".nav_menu_item");
-// console.log(navButtons)
-// for (let i = 0; i < navButtons.length; i++){
-//     navButtons[i].addEventListener("click", function () {
-//         this.classList.toggle("nav_menu_active")
-//     })
-// }
+
 let navButtons = document.querySelectorAll(".nav_menu_item");
 for (let i = 0; i < navButtons.length; i++){
     navButtons[i].addEventListener("click", function () { 
@@ -50,5 +44,19 @@ function closeModalSendMessage() {
 modalSendMessage.addEventListener("click", function (e) {
     if (e.target === modalSendMessage) {
         closeModalSendMessage()
+    }
+})
+function changeBackgroundModal() {
+    modalSendMessage.style.backgroundColor = "#eaeef1bb";
+
+}
+function backBackgroundModal(){
+    modalSendMessage.style.backgroundColor = "#eaeef1de";
+}
+modalSendMessage.addEventListener("mouseover", function (e) {
+    if (e.target === modalSendMessage) {
+        changeBackgroundModal()
+    } else {
+        backBackgroundModal()
     }
 })
