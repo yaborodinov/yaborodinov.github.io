@@ -32,11 +32,12 @@ let sendMessageButton = document.querySelectorAll("#send_message");
 let modalSendMessage = document.querySelector(".modal");
 
 sendMessageButton.forEach(function (bnt) {
-    bnt.addEventListener("click", function () {
-        modalSendMessage.classList.add("show")
-        modalSendMessage.classList.remove("hide")
-    })
+    bnt.addEventListener("click", openModalSendMessage)
 })
+function openModalSendMessage() {
+    modalSendMessage.classList.add("show")
+    modalSendMessage.classList.remove("hide")
+}
 function closeModalSendMessage() {
     modalSendMessage.classList.add("hide")
     modalSendMessage.classList.remove("show")
@@ -50,6 +51,7 @@ function changeBackgroundModal() {
     modalSendMessage.style.backgroundColor = "#eaeef1bb";
 
 }
+
 function backBackgroundModal(){
     modalSendMessage.style.backgroundColor = "#eaeef1de";
 }
@@ -68,26 +70,28 @@ modalSendMessage.addEventListener("mouseover", function (e) {
 
 
 // message
-let modalDiscount = document.querySelector(".message")
-// function getCoords(elem) {
-//     let box = elem.getBoundingClientRect();
-//     return {
-//         top: box.top + pageYOffset
-//     }
-// }
-// console.log(getCoords(pageHtml))
 
 
+let discountMessage = document.querySelector(".message");
+function openDiscount() {
+    discountMessage.classList.add("show")
+    discountMessage.classList.remove("hide")
+}
+function closeModalMessageByScroll() {
+    discountMessage.classList.add("hide")
+    discountMessage.classList.remove("show")
+}
 
-window.addEventListener('scroll', function () {
-    let a = pageYOffset+ "px";
-    if (a > 1000) {
-        modalDiscount.classList.add("show")
-        
-        
-    } else {
-        
-        
+
+function openDiscountByScroll() {
+    if (window.pageYOffset >= document.documentElement.scrollHeight / 2) {
+        openDiscount();
+        window.removeEventListener("scroll", openDiscountByScroll)
     }
-    
-});
+}
+window.addEventListener('scroll', openDiscountByScroll)
+discountMessage.addEventListener("click", function (e) {
+    if (e.target === discountMessage) {
+        closeModalMessageByScroll()
+    }
+})

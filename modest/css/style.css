@@ -508,12 +508,7 @@ justify-content: flex-end;
 .modal textarea{
     height: 70px;
 }
-.hide{
-    display: none;
-}
-.show{
-    display: block;
-}
+
 /* message ===============================*/ 
 .message{
     position: fixed;
@@ -525,6 +520,7 @@ justify-content: flex-end;
     z-index: 40;
     display: none;
 }
+
 .message_block{
     flex-direction: column;
     align-items: center;
@@ -558,6 +554,13 @@ justify-content: flex-end;
 .message_footer_social:hover{
     box-shadow: 0 1px 7px #fff;
     transition: 0.1s linear;    
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
 }
 
 
