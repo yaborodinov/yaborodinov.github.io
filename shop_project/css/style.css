@@ -254,7 +254,13 @@ body{
 .col-md-900{
     width: 900px;
 }
-
+/* slider */
+.slider-block > div {
+  padding: 150px 0;
+  text-align: center;
+  color: aliceblue;
+  font-size: 50px;
+}
 
 /* sidebar */
 .sidebar{

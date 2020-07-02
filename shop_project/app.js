@@ -50,19 +50,32 @@ let moreDetailsButtons = document.querySelectorAll(".more_details")
 let modal = document.querySelector(".modal")
 let closeBtn = document.querySelector(".btn_close");
 moreDetailsButtons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-        modal.classList.add("show")
-        modal.classList.remove("hide")
-    })
+    btn.addEventListener("click", openModal)
 })
 
+function openModal() {
+    modal.classList.add("show")
+    modal.classList.remove("hide")
+}
 function closeModal() {
     modal.classList.add("hide")
     modal.classList.remove('show')
 }
+
+function openModalByScroll() {
+    if (window.pageYOffset >= document.documentElement.scrollHeight/2) {
+        openModal();
+        window.removeEventListener("scroll", openModalByScroll)
+    }
+}
+window.addEventListener('scroll',openModalByScroll)
+
 closeBtn.addEventListener("click", closeModal);
 modal.addEventListener("click", function (e) {
     if (e.target === modal) {
         closeModal()
     }
 })
+
+// slider
+$(".slider-block").slick()
