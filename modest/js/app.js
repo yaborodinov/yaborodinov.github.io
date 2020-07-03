@@ -95,3 +95,11 @@ discountMessage.addEventListener("click", function (e) {
         closeModalMessageByScroll()
     }
 })
+// slider ============
+
+$(".slider").slick({
+    mobileFirst:true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false
+});
