@@ -19,7 +19,7 @@ body{
 
 .header_row{
     justify-content: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .nav{
     width: 100%;
@@ -218,6 +218,19 @@ body{
 }
 .my_contact_icon_row{
     justify-content: center;
+}
+
+
+/* footer */
+
+.footer_row{
+    justify-content: center;
+}
+.footer_content{
+    color: #494949;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
