@@ -16,6 +16,12 @@
     padding-left: 15px;
     margin-bottom: 10px;
 }
+.col-xs-12{
+    width: 100%;
+}
+.col-xs-6{
+    width: 50%;
+}
 
 
 
@@ -25,6 +31,15 @@
 @media(min-width:768px){
 .container{
     max-width: 720px;
+}
+.col-sm-4{
+    width: 33.33333%;
+}
+.col-sm-3{
+    width: 25%;
+}
+.col-sm-6{
+    width: 50%;
 }
 
 }
@@ -41,6 +56,12 @@
 .container{
     max-width: 940px;
 }
+.col-md-6{
+    width: 50%;
+}
+.col-md-3{
+    width: 25%;
+}
 }
 
 
@@ -53,6 +74,10 @@
 .container{
     max-width: 1170px;
 }
+.col-lg-3{
+    width: 25%;
+}
+
 
 }
 
