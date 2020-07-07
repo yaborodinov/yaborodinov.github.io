@@ -340,9 +340,6 @@ body{
 .nav_menu::-webkit-scrollbar{
     display: none;
 }
-.nav_menu_item{
-    font-size: 26px;
-}
 /* main */
 .section_prev{
     height: 450px;
