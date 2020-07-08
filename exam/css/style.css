@@ -231,6 +231,7 @@ body{
     font-size: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 
@@ -345,10 +346,21 @@ body{
 }
 
 .nav_menu{
-    text-align: center;
+    
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 260px;
+}
+.nav{
+    display: flex;
     justify-content: center;
-    overflow-y: auto;
-    height: 105px;
+}
+.nav_menu li{
+    margin-right: 20px;
+}
+.nav_menu li:last-child{
+    margin-right: 0;
 }
 .nav_menu::-webkit-scrollbar{
     display: none;
@@ -400,6 +412,9 @@ body{
 .my_contacts_col{
     display: flex;
     justify-content: center;
+}
+.my_contacts_col:last-child{
+    margin: 0;
 }
 .my_contact_icon{
     width: 59px;
