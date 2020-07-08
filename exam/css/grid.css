@@ -73,6 +73,13 @@
 .col-md-3{
     width: 25%;
 }
+.col-md-8{
+    width: 66.66666%;
+}
+
+.col-md-4{
+    width: 33.33333%;
+}
 }
 
 
