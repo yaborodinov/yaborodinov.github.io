@@ -31,7 +31,7 @@ body{
     font-size: 36px;
     font-weight: 400;
 }
-.nav_menu_item:hover{
+.nav_menu_item:hover, .menu_active{
     color: #ff0072;
     transition: 0.2s linear;
 }
@@ -97,6 +97,7 @@ body{
     font-weight: 500;
     
 }
+
 .about_me_title{
     margin-bottom: 20px;
 
@@ -119,6 +120,10 @@ body{
 .section_text{
     font-size: 17px;
     color: #494949;
+}
+.dark_section{
+    color: #fff;
+    text-align: center;
 }
 .avatar{
     width: 100%;

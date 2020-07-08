@@ -7,3 +7,130 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+/* .quote-slider{
+    padding-top: 130px;
+} */
+.quote_content{
+    /* text-align: center; */
+}
+.quote_title{
+    padding-bottom: 30px;
+}
+.quote_content_text{
+    position: relative;
+    display: block;
+text-align: center;
+}
+.quote_content_left_text_span{
+    font-size: 85px;
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    
+}
+.quote_content_right_text_span{
+    font-size: 85px;
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    transform: rotateZ(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media(min-width:768px){
+.quote-slider{
+    padding-top: 60px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* laptop */
+@media(min-width:992px){
+    .quote-slider{
+    padding-top: 100px;
+}
+}
+
+
+
+
+
+
+
+
+/* desktop */
+@media(min-width:1200px){
+.quote-slider{
+    padding-top: 130px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media(max-width:767px){
+/* section_quote */
+.section_quote{
+    background-size: 665%;
+}
+.quote_content{
+    flex-direction: column;
+}
+.quote_content_text{
+    padding-right: 50px;
+}
+
+.quote_content_right_text_span{
+    bottom: -30px;
+    right: 42px;
+}
+.quote-slider{
+    padding-top: 20px;
+}
+}
