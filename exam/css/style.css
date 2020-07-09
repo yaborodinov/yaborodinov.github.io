@@ -267,9 +267,7 @@ body{
 .nav_menu_item{
     font-size: 26px;
 }
-.section_title{
-    padding-top: 30px;
-}
+
 .about_me_row{
     flex-wrap: wrap;
     margin-top: 50px;
@@ -300,9 +298,7 @@ body{
 .nav_menu_item{
     font-size: 32px;
 }
-.section_title{
-    padding-top: 50px;
-}
+
 .my_contact_icon{
     margin-right: 30px;
 }
@@ -333,9 +329,7 @@ body{
 /* desktop */
 @media(min-width:1200px){
 
-.section_title{
-    padding-top: 70px;
-}
+
 
 
 
@@ -380,9 +374,7 @@ body{
     display: none;
 }
 /* main */
-.section_title{
-    padding-top: 20px;
-}
+
 .section_prev{
     height: 450px;
 }

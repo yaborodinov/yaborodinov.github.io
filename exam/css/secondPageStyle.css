@@ -55,7 +55,7 @@
 .services_title{
     justify-content: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 70px;
 }
 .services_subtitle{
     margin-top: 30px;
@@ -206,6 +206,9 @@
 }
 .quote-slider{
     padding-top: 20px;
+}
+.services_title{
+    padding-top: 40px;
 }
 .service_item{
     margin-top: 40px;
