@@ -7,3 +7,7 @@ $(document).ready(function () {
         // autoplaySpeed: 1000
     });
     });
+
+
+    
+AOS.init();

@@ -2,7 +2,7 @@
 .section_quote{
     background-image: url(../img/Layer\ 4.png);
     width: 100%;
-    height: 524px;
+    max-height: 524px;
     background-position-x: 10%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -33,6 +33,7 @@
     border: 5px solid #fff;
     border-radius: 50%;
     width: 100%;
+    max-width: 170px;
     height: auto;
 }
 .autor_info{
@@ -47,8 +48,60 @@
     font-size: 15px;
     font-weight: 400;
 }
-
-
+/* services */
+.service{
+    padding-bottom: 70px;
+}
+.services_title{
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.services_subtitle{
+    margin-top: 30px;
+    text-align: center;
+}
+.service_title{
+    font-size: 25px;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.service_content{
+    flex-wrap: wrap;
+}
+.service_item{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.servise_logo{
+    width: 114px;
+    height: 114px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo_1{
+    background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_03.jpg);
+}
+.logo_2{
+    background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_05.jpg);
+}
+.logo_3{
+    background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_07.jpg);
+}
+.logo_4{
+    background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_12.jpg);
+}
+.logo_5{
+    background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_13.jpg);
+}
+.logo_6{
+    background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_14.jpg);
+}
 
 
 
@@ -94,6 +147,12 @@
 @media(min-width:992px){
     .quote-slider{
     padding-top: 100px;
+}
+.service_item{
+    margin-top: 70px;
+}
+.service{
+    padding-bottom: 90px;
 }
 }
 
@@ -147,5 +206,11 @@
 }
 .quote-slider{
     padding-top: 20px;
+}
+.service_item{
+    margin-top: 40px;
+}
+.service{
+    padding-bottom: 40px;
 }
 }
