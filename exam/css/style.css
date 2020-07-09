@@ -228,7 +228,9 @@ body{
 
 
 /* footer */
-
+.footer_grey{
+    background-color: #dcdcde;
+}
 .footer_row{
     justify-content: center;
 }
