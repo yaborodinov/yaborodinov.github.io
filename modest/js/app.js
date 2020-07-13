@@ -30,7 +30,7 @@ for (let anchor of anchors) {
 // modal
 let sendMessageButton = document.querySelectorAll("#send_message");
 let modalSendMessage = document.querySelector(".modal");
-
+let closeModalButton = document.querySelector(".modal_button_close");
 sendMessageButton.forEach(function (bnt) {
     bnt.addEventListener("click", openModalSendMessage)
 })
@@ -43,7 +43,7 @@ function closeModalSendMessage() {
     modalSendMessage.classList.remove("show")
 }
 modalSendMessage.addEventListener("click", function (e) {
-    if (e.target === modalSendMessage) {
+    if (e.target === modalSendMessage || e.target ===closeModalButton) {
         closeModalSendMessage()
     }
 })
@@ -73,6 +73,7 @@ modalSendMessage.addEventListener("mouseover", function (e) {
 
 
 let discountMessage = document.querySelector(".message");
+let closeMessageButton = document.querySelector(".message_button_close");
 function openDiscount() {
     discountMessage.classList.add("show")
     discountMessage.classList.remove("hide")
@@ -91,7 +92,7 @@ function openDiscountByScroll() {
 }
 window.addEventListener('scroll', openDiscountByScroll)
 discountMessage.addEventListener("click", function (e) {
-    if (e.target === discountMessage) {
+    if (e.target === discountMessage || e.target ===closeMessageButton) {
         closeModalMessageByScroll()
     }
 })

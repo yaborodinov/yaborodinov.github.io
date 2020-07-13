@@ -30,6 +30,9 @@
 .col-sm-4{
     width: 300px;
 }
+.col-sm-5{
+    width: 41.66666%;
+}
 .col-sm-6{
     width: 50%;
 }
@@ -48,9 +51,6 @@
 }
 .col-md-7{
     width: 58.333333%;
-}
-.col-sm-5{
-    width: 41.66666666%;
 }
 .col-md-4{
     width: 360px;
