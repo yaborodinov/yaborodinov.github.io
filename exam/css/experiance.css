@@ -1,8 +1,8 @@
 
-.portfolio_title{
+.portfolio_title, .experiance_title{
     padding-bottom: 30px;
 }
-.portfolio_subtitle{
+.portfolio_subtitle, .experiance_subtitle{
     text-align: center;
 }
 .portfolio_slider{
@@ -12,8 +12,62 @@
     display: flex;
     flex-direction: row;
 }
+.slider_row a{
+    outline: none;
+}
+.slider_row a:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
 
+/* section_experiance */
 
+.section_experiance{
+    padding: 80px 0;
+    background: linear-gradient(45deg, rgb(162,26,240), rgb(255,0,114));
+    color: #fff;
+}
+.experiance_title{
+    color: #fff;
+}
+.experiance_item{
+    flex-direction: row;
+}
+.experiance_item_reverse{
+    flex-direction: row-reverse;
+}
+
+.experiance_item_main{
+    border-right: 4px solid #fff;
+}
+.experiance_item_main_reverse{
+    border-right: none;
+    border-left: 4px solid #fff;
+}
+.experiance_item_caption{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.experiance_item_caption_date{
+    font-size: 22px;
+    font-weight: 300;
+}
+.experiance_item_caption, .experiance_item_caption_date{
+    text-align: end;
+}
+.experiance_item_caption_reverse, .experiance_item_caption_date_reverse{
+    text-align: start;
+}
+.experiance_item_text{
+    text-align: left;
+    color: rgb(177, 177, 177);
+    font-size: 14px;
+}
+.experiance_item_text_reverse{
+    text-align: right;
+    color: rgb(202, 202, 202);
+}
 
 
 
@@ -50,6 +104,14 @@
     width: 100%;
     height: auto;
 }
+.experiance_block{
+    padding: 30px 0 20px 0;
+}
+
+
+
+
+
 }
 
 
@@ -73,7 +135,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.section_experiance{
+    padding: 100px 0;
+}
 
+
+/* .experiance_block{
+    padding: 50px 0;
+} */
 }
 
 
@@ -86,8 +155,12 @@
 .section_portfolio{
     padding: 80px 0;
 }
-
-
+.section_experiance{
+    padding: 110px 0;
+}
+/* .experiance_block{
+    padding: 60px 0;
+} */
 
 
 }
@@ -120,6 +193,39 @@
 .portfolio_item img{
     width: 100%;
     height: auto;
+}
+.section_experiance{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.experiance_block{
+    padding: 20px 0;
+}
+.experiance_item{
+    flex-direction: column;
+    align-items: center;
+}
+.experiance_item_main{
+    border-right: none;
+    padding-bottom: 40px;
+    position: relative;
+}
+.experiance_item_main_reverse{
+    border-left: none;
+}
+.experiance_item_main:after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 4px;
+    background-color: #fff;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-100px);
+    position: absolute;
+}
+.experiance_item_caption, .experiance_item_caption_date, .experiance_item_text{
+    text-align: center;
 }
 }
 
