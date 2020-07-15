@@ -1,30 +1,27 @@
 'use strict'
 
 
-let navButtons = document.querySelectorAll(".nav_menu_item");
-for (let i = 0; i < navButtons.length; i++){
-    navButtons[i].addEventListener("click", function () { 
-        let current = document.getElementsByClassName("nav_menu_active");
-        current[0].className = current[0].className.replace("nav_menu_active", "");
-        this.className += "nav_menu_active";
-    })
-}
+// nav_mobile_menu
+let mobileMenu = document.querySelector(".nav_mobile_menu");
+let mainMenu = document.querySelector(".navigation");
+mobileMenu.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active_menu");
+    if (mobileMenu.classList.contains("active_menu")) {
+        mainMenu.classList.add("active_menu");
+    } else {
+        mainMenu.classList.remove("active_menu");
+    }
+})
 
-// anchor
-let anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault()
 
-        let blockID = anchor.getAttribute('href').substr(1)
+// // anchor
 
-        document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    })
-}
+
+$('#nav').onePageNav({
+    currentClass: 'current'
+});
+
 
 
 // modal
