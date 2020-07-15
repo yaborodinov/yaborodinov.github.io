@@ -110,7 +110,17 @@ body{
 /* section */
 .section{
     padding: 80px 0;
+    
 }
+.section_about, .section_team, .section_work, .section_services, .section_features, .section_contact{
+    position: relative;
+}
+#about, #team, #work, #services, #features, #contact{
+    position: absolute;
+    left: 0;
+}
+
+
 .section_title{
     color: #292f36;
     font-size: 36px;
@@ -677,6 +687,16 @@ justify-content: flex-end;
 .container{
     max-width: 720px;
 }
+#about, #work, #services, #contact{
+    top: -127px;
+}
+#team{
+    top: -136px
+}
+#features{
+    top: -126px;
+}
+
 
 
 .nav_menu{
@@ -759,6 +779,13 @@ justify-content: flex-end;
     align-items: center;
     height: 80px;
 }
+#about, #team, #services, #contact{
+    top: -80px;
+}
+#work, #features{
+    top: -78px;
+}
+
 .logo{
     margin-top: 0 ;
 }
@@ -814,6 +841,18 @@ justify-content: flex-end;
         display: flex;
         flex-direction: column;
     }
+    #about, #work, #services, #contact{
+        top: -41px;
+    }
+    #team{
+        top: -51px;
+    }
+    #features{
+        top: -40px;
+    }
+    
+    
+
     .search{
         padding: 5px 50px 5px 10px;
     }
