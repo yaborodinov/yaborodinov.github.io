@@ -533,8 +533,8 @@ body{
     font-weight: 700;
 }
 .price{
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     font-size: 48px;
     font-weight: 700;
    text-align: center;
@@ -542,6 +542,35 @@ body{
 .price_coin{
     font-size: 26px;
     vertical-align: top;
+}
+.product_quantity, .product_quantity input{
+    text-align: center;
+    outline: none;
+}
+.product_quantity input{
+    width: 30px;
+    color: #2c71b8;
+    font-weight: 300;
+    border: 1px solid #fff;
+}
+.product_quantity button{
+    background-color: rgba(44,113,184, 0.75);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.product_quantity button:disabled{
+    color: red;
+}
+.product_quantity button:hover{
+    cursor: pointer;
+}
+
+
+/* new input */
+.decrement_, .new_input, .increment_{
+    text-align: center;
 }
 
 
