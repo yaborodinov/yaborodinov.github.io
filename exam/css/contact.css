@@ -22,8 +22,55 @@
     color: #15263e;
     font-weight: 600;
 }
+/* contact section */
+.contact_section{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/Layer\ 9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal_block_row{
+    justify-content: center;
+}
+.modal_block{
+    margin-top: 30px;
+    background-color: #15263e;
+}
 
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.form>div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form input, .form textarea{
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form>div:nth-child(2){
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.form textarea{
+    max-height: 140px;
+}
+.contact_bnt{
+    margin: auto;
+}
 
 
 
@@ -37,7 +84,12 @@
 
 /* tablet */
 @media(min-width:768px){
-
+.modal_block{
+    padding: 40px;
+}
+.modal_subtitle{
+    padding: 15px 0 30px 0;
+}
 
 }
 
@@ -45,10 +97,12 @@
 
 
 
-
-
 /* laptop */
 @media(min-width:992px){
+.modal_block{
+    padding: 45px;
+    
+}
 
 
 }
@@ -66,6 +120,10 @@
 /* desktop */
 @media(min-width:1200px){
 
+
+.modal_block{
+    padding: 70px;
+}
 
 
 }
@@ -94,18 +152,8 @@
     align-items: center;
     padding-top: 40px;
     padding-bottom: 20px;
-    position: relative;
-    box-shadow: 0px -6px 12px #dcdcde inset;
 }
-/* .blog_content_col:after{
-    position: absolute;
-    content: "";
-    display: block;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #dcdcde;
-} */
+
 .blog_info_title{
     padding: 16px 0 8px 0;
 }
@@ -115,5 +163,37 @@
 .section_hr{
     background-color: rgb(224, 32, 32);
 }
+/* contact section */
+.contact_section{
+    height: 776px;
+}
+.modal_block{
+    margin-top: 88px;
+    padding: 20px;
+}
+.modal_subtitle{
+    padding: 20px 0 30px 0;
+}
+/* form */
+
+.form>div:first-child{
+    flex-direction: column;
+    align-items: center;
+}
+.form>div input{
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.form>div input:last-child{
+    margin-bottom: 0;
+}
+
+.form textarea{
+    max-height: 100px;
+    margin-right: 0;
+}
+
+
+
 
 }
