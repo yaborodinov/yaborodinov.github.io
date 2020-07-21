@@ -76,48 +76,68 @@ modal.addEventListener("click", function (e) {
     }
 })
 
+// slider
+$(".slider-block").slick()
+
+
+
 
 // product-quontity
 let decrementBtn = document.querySelectorAll(".decrement")[0];
 let incrementBtn = document.querySelectorAll(".increment")[0];
 let productQuontity = document.querySelectorAll(".product_quantity input")[0];
 
-incrementBtn.addEventListener("click", function () {
-    let currentCount = +productQuontity.value;
-    let nextCount = currentCount + 1;
-    productQuontity.value = nextCount;
-    toggleButtonState(nextCount);
-    toggleButtonStateMax(nextCount);
-})
+// incrementBtn.addEventListener("click", function () {
+//     let currentCount = +productQuontity.value;
+//     let nextCount = currentCount + 1;
+//     productQuontity.value = nextCount;
+//     toggleButtonState(nextCount);
+//     toggleButtonStateMax(nextCount);
+// })
 
-decrementBtn.addEventListener("click", function () {
-    let currentCount = +productQuontity.value;
-    let nextCount = currentCount - 1;
-    productQuontity.value = nextCount;
-    toggleButtonState(nextCount);
-    toggleButtonStateMax(nextCount);
-})
-
-
-let currentCount = +productQuontity.value;
-function toggleButtonState(count) {
-    if (count <= 1) {
-        decrementBtn.disabled = true;
-    } else {
-        decrementBtn.disabled = false;
-    }
-}
-function toggleButtonStateMax(count) {
-    if (count >= 5) {
-        incrementBtn.disabled = true;
-    } else {
-        incrementBtn.disabled = false;
-    }
-}
-toggleButtonStateMax(currentCount);
-toggleButtonState(currentCount);
+// decrementBtn.addEventListener("click", function () {
+//     let currentCount = +productQuontity.value;
+//     let nextCount = currentCount - 1;
+//     productQuontity.value = nextCount;
+//     toggleButtonState(nextCount);
+//     toggleButtonStateMax(nextCount);
+// })
 
 
+// let currentCount = +productQuontity.value;
+// function toggleButtonState(count) {
+//     if (count <= 1) {
+//         decrementBtn.disabled = true;
+//     } else {
+//         decrementBtn.disabled = false;
+//     }
+// }
+// function toggleButtonStateMax(count) {
+//     if (count >= 5) {
+//         incrementBtn.disabled = true;
+//     } else {
+//         incrementBtn.disabled = false;
+//     }
+// }
+// toggleButtonStateMax(currentCount);
+// toggleButtonState(currentCount);
 
-// slider
-$(".slider-block").slick()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// selectize
+$('.select_category').selectize({
+    create: true,
+    sortField: { field: 'text' }
+});
