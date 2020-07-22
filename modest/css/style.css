@@ -514,7 +514,7 @@ justify-content: flex-end;
     padding: 8px;
     background-color: #eaeef1;
     outline: none;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
@@ -525,7 +525,6 @@ justify-content: flex-end;
 }
 .modal_textarea>textarea{
     resize: none;
-    /* border-radius: 3px; */
 }
 
 /* message ===============================*/ 
@@ -744,7 +743,6 @@ justify-content: flex-end;
 }
 .modal textarea{
     width: 400px;
-    /* height: 150px; */
 }
 /* message===== */
 .message{
