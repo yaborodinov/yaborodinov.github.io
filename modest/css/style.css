@@ -485,8 +485,7 @@ justify-content: flex-end;
 .modal_block{
     position: relative;
     max-width: 555px;
-    margin: 120px auto;
-    height: 350px;
+    margin: 150px auto;
     border: 1px #ccc;
     background-color: #fff;
 }
@@ -494,17 +493,18 @@ justify-content: flex-end;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
 }
 .modal form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .modal_fields_title{
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 14px;
+    margin-bottom: 5px;
     color: #8d8f92;
     font-weight: 700;
     text-transform: uppercase;
@@ -515,13 +515,17 @@ justify-content: flex-end;
     background-color: #eaeef1;
     outline: none;
     border: none;
+    border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
     color: #8d8f92;
-    width: 100%;
 }
-.modal textarea{
-    height: 70px;
+.input_field:focus{
+    border: 1px solid #8d8f92;
+}
+.modal_textarea>textarea{
+    resize: none;
+    /* border-radius: 3px; */
 }
 
 /* message ===============================*/ 
@@ -736,10 +740,11 @@ justify-content: flex-end;
 }
 .input_main{
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .modal textarea{
     width: 400px;
-    height: 150px;
+    /* height: 150px; */
 }
 /* message===== */
 .message{
@@ -988,10 +993,7 @@ justify-content: flex-end;
     }
     /* modal */
     
-    .modal_block{
-        margin: 150px auto;
-        
-    }
+    
     .close{
         right: 0;
     }
