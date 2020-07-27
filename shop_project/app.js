@@ -215,7 +215,7 @@ let minCount = 1;
 let maxCount = 5;
 
 
-function Counter(decrementButton, incrementButton,  inputField, minCount =1, MaxCount=5) {
+function Counter(decrementButton, incrementButton,  inputField, minCount =1, maxCount=5) {
     this.domRefs = {
         decrementButton,
         incrementButton,
@@ -246,3 +246,8 @@ function Counter(decrementButton, incrementButton,  inputField, minCount =1, Max
 }
 const counter1 = new Counter(decrementBtn[0], incrementBtn[0], productQuontity[0]);
 const counter2 = new Counter(decrementBtn[1], incrementBtn[1], productQuontity[1]);
+const counter3 = new Counter(decrementBtn[2], incrementBtn[2], productQuontity[2], minCount = 1, maxCount = 3);
+const counter4 = new Counter(decrementBtn[3], incrementBtn[3], productQuontity[3], minCount = 1, maxCount = 10);
+
+
+
