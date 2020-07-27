@@ -81,11 +81,79 @@ $(".slider-block").slick()
 
 
 
+// selectize
+$('.select_category').selectize({
+    create: true,
+    sortField: { field: 'text' }
+});
 
-// product-quontity
-let decrementBtn = document.querySelectorAll(".decrement")[0];
-let incrementBtn = document.querySelectorAll(".increment")[0];
-let productQuontity = document.querySelectorAll(".product_quantity input")[0];
+
+
+
+// product-quontity==================================================================================
+
+
+
+// let decrementBtn = document.querySelectorAll(".decrement_btn")[0];
+// let incrementBtn = document.querySelectorAll(".increment_btn")[0];
+// let productQuontity = document.querySelectorAll(".product_quantity input")[0];
+
+
+// let minCount = 1;
+// let maxCount = 5;
+
+
+
+// function toggleButtonState(count, incrementBtn, decrementBtn) {
+//     decrementBtn.disabled = count <= minCount;
+//     incrementBtn.disabled = count >= maxCount;
+// }
+
+
+// for (let i = 0; i < incrementBtn.length; i++){
+//    incrementBtn[i].addEventListener("click", function () {
+//     let currentCount = +productQuontity[i].value;
+//     let nextCount = currentCount + 1;
+//     productQuontity[i].value = nextCount;
+//     toggleButtonState(nextCount, incrementBtn[i], decrementBtn[i]);
+    
+// }) 
+// }
+
+
+// for (let i = 0; i < decrementBtn.length; i++) {
+//     decrementBtn[i].addEventListener("click", function () {
+//         let currentCount = +productQuontity[i].value;
+//         let nextCount = currentCount - 1;
+//         productQuontity[i].value = nextCount;
+//         toggleButtonState(nextCount, incrementBtn[i], decrementBtn[i]);
+
+//     })
+// }
+
+// for (let i = 0; i < productQuontity.length; i++){
+//     let currentCount = +productQuontity[i].value;
+//     toggleButtonState(currentCount, incrementBtn[i], decrementBtn[i]);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // incrementBtn.addEventListener("click", function () {
 //     let currentCount = +productQuontity.value;
@@ -135,9 +203,46 @@ let productQuontity = document.querySelectorAll(".product_quantity input")[0];
 
 
 
+// oop product Quantity
 
-// selectize
-$('.select_category').selectize({
-    create: true,
-    sortField: { field: 'text' }
-});
+
+let decrementBtn = document.querySelectorAll(".decrement_btn");
+let incrementBtn = document.querySelectorAll(".increment_btn");
+let productQuontity = document.querySelectorAll(".product_quantity input");
+
+
+let minCount = 1;
+let maxCount = 5;
+
+
+function Counter(decrementButton, incrementButton,  inputField, minCount =1, MaxCount=5) {
+    this.domRefs = {
+        decrementButton,
+        incrementButton,
+        inputField,
+    }
+    this.toggleButtonState = function () {
+        let count = this.domRefs.inputField.value;
+        this.domRefs.decrementButton.disabled = count <= minCount;
+        this.domRefs.incrementButton.disabled = count >= maxCount;
+    }
+    this.toggleButtonState();
+
+    this.increment = function () {
+        let currentCount = +this.domRefs.inputField.value;
+        let nextCount = currentCount + 1;
+        this.domRefs.inputField.value = nextCount;
+        this.toggleButtonState(nextCount);
+    }
+    this.decrement = function () {
+        let currentCount = +this.domRefs.inputField.value;
+        let nextCount = currentCount - 1;
+        this.domRefs.inputField.value = nextCount;
+        this.toggleButtonState(nextCount);
+    }
+   
+    this.domRefs.decrementButton.addEventListener("click", this.decrement.bind(this));
+    this.domRefs.incrementButton.addEventListener("click", this.increment.bind(this));
+}
+const counter1 = new Counter(decrementBtn[0], incrementBtn[0], productQuontity[0]);
+const counter2 = new Counter(decrementBtn[1], incrementBtn[1], productQuontity[1]);
