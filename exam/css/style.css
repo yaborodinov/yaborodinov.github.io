@@ -238,6 +238,9 @@ body{
 .my_contact_text>div:first-child{
     margin-bottom: 20px;
 }
+.my_contact_text>div:nth-child(2){
+    margin-bottom: 5px;
+}
 .my_contact_icon_row{
     justify-content: center;
 }
