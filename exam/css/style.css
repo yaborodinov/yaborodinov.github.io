@@ -505,10 +505,9 @@ body{
 .my_contacts_col{
     display: flex;
     justify-content: center;
+    margin:20px 0 10px;
 }
-.my_contacts_col:last-child{
-    margin: 0;
-}
+
 .my_contact_icon{
     width: 59px;
     height: 59px;

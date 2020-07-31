@@ -11,9 +11,7 @@
 .quote_block{
     padding-top: 30px;
 }
-.quote_content{
-    /* text-align: center; */
-}
+
 .quote_title{
     padding: 0 0 30px 0;
 }
@@ -103,6 +101,10 @@
     background-image: url(../img/tvorcheskiy-maket-dlya-sayta-portfolio-восстановлено_14.jpg);
 }
 
+/* we do */
+.wedo__row{
+    flex-direction: column;
+}
 
 
 
@@ -153,6 +155,9 @@
 }
 .service{
     padding-bottom: 90px;
+}
+.wedo__row{
+    flex-direction: row;
 }
 }
 
