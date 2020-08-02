@@ -47,8 +47,8 @@
     font-weight: 400;
 }
 /* services */
-.service{
-    padding-bottom: 70px;
+.service, .wedo{
+    margin-bottom: 70px;
 }
 .services_title{
     justify-content: center;
@@ -105,8 +105,32 @@
 .wedo__row{
     flex-direction: column;
 }
+.tabs-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.tabs-nav__item{
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    flex: 1;
+    padding: 20px;
+    background-color: #15263e;
+    color: #fff;
+    text-align: center;
 
-
+}
+.tabs-nav__item.is-active{
+    color: #ff0072;
+}
+.tab{
+    display: none;
+    padding: 20px;
+    background-color: #dcdcde;
+    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+}
+.tab.is-active{
+    display: block;
+}
 
 
 
@@ -153,8 +177,8 @@
 .service_item{
     margin-top: 70px;
 }
-.service{
-    padding-bottom: 90px;
+.service, .wedo{
+    margin-bottom: 90px;
 }
 .wedo__row{
     flex-direction: row;
@@ -218,7 +242,7 @@
 .service_item{
     margin-top: 40px;
 }
-.service{
-    padding-bottom: 40px;
+.service, .wedo{
+    margin-bottom: 40px;
 }
 }
