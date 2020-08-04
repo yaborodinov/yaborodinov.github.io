@@ -87,7 +87,12 @@
 .col-md-3{
     width: 25%;
 }
-
+.col-md-5{
+    width: 41.66666%;
+}
+.col-md-7{
+    width: 58.333333%;
+}
 .col-md-8{
     width: 66.66666%;
 }
