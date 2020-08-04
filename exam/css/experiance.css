@@ -5,6 +5,9 @@
 .portfolio_subtitle, .experiance_subtitle{
     text-align: center;
 }
+.experiance_subtitle{
+    color: #fff;
+}
 .portfolio_slider{
     padding-top: 70px;
 }
