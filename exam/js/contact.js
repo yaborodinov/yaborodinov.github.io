@@ -13,3 +13,13 @@ mobileMenu.addEventListener("click", function () {
         mainMenu.classList.remove("active-menu");
     }
 })
+
+
+
+
+// collapse
+
+$('[data-collapse]').on('click', '.accordion__header', function (e) {
+    $('.accordion__item').find('.accordion__content').stop().slideUp();
+    $(this).closest('.accordion__item').find('.accordion__content').stop().slideToggle();
+});
