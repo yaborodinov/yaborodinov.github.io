@@ -52,10 +52,10 @@
     justify-content: space-between;
     cursor: pointer;
     padding: 10px 15px;
-    background-color: #bdbdbedb;
+    background-color: #b2b2b4db;
 }
 .accordion__header:hover{
-    background-color: #d2d2d2;
+    background-color: #c4c4c4;
 }
 
 .accordion__header>h3{
@@ -77,7 +77,7 @@
 }
 
 .accordion__content{
-    background-color: #c4c4c8ad;
+    background-color: #dfdfdfad;
     padding: 10px 15px;
     overflow-y: auto;
     height: 200px;
