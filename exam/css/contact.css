@@ -83,6 +83,9 @@
     height: 200px;
     display: none;
 }
+.accordion__content-active{
+    display: block;
+}
 
 .accordion__content p{
     font-size: 22px;
