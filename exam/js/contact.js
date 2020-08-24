@@ -23,3 +23,16 @@ $('[data-collapse]').on('click', '.accordion__header', function (e) {
     $('.accordion__item').find('.accordion__content').stop().slideUp();
     $(this).closest('.accordion__item').find('.accordion__content').stop().slideToggle();
 });
+
+// scrollbar
+(function ($) {
+    $(window).on("load", function () {
+        $(".accordion__content").mCustomScrollbar({
+            axis: "yx",
+            theme: "dark-thin",
+            scrollButtons: {
+                enable: true
+            }
+        });
+    });
+})(jQuery);
