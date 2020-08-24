@@ -12,3 +12,18 @@ mobileMenu.addEventListener("click", function () {
         mainMenu.classList.remove("active-menu");
     }
 })
+
+
+
+// scrollbar
+    (function ($) {
+        $(window).on("load", function () {
+            $(".mCustomScrollbar").mCustomScrollbar({
+                axis: "yx",
+                theme: "rounded-dots-dark",
+                scrollButtons: {
+                    enable: true
+                }
+            });
+        });
+    })(jQuery);

@@ -25,3 +25,17 @@ mobileMenu.addEventListener("click", function () {
         mainMenu.classList.remove("active-menu");
     }
 })
+
+
+    // scrollbar
+    (function ($) {
+        $(window).on("load", function () {
+            $(".portfolio__text").mCustomScrollbar({
+                axis: "yx",
+                theme: "dark-thin",
+                scrollButtons: {
+                    enable: true
+                }
+            });
+        });
+    })(jQuery);
