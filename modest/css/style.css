@@ -61,8 +61,8 @@ body{
     transition: 0.2s linear;
 }
 .current a{
-    color: #23b7a4;
-    border: 2px solid #23b7a4;
+    color: #FF7C00	;
+    border: 2px solid #FF7C00	;
     border-radius: 4px;
     transition: 0.2s linear;
 }
@@ -83,7 +83,7 @@ body{
     width: 195px;
     padding: 10px 50px 10px 10px;
     background-color: #1d2126;
-    color: #a4aead;
+    color: #FF7C00;
     outline: none;
     border: 2px solid #adb0b3;
     border-radius: 4px;
@@ -169,7 +169,7 @@ body{
     margin-bottom: 40px;
 }
 .we_are_mission_num{
-    background-color: #23b7a4;
+    background-color: #FF7C00;
     font-weight: 700;
     margin-right: 16px;
 }
@@ -367,9 +367,9 @@ hr{
     height: 44px;
     width: 146px;
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #fff;
+    border: 2px solid #FF7C00;
     border-radius: 4px;
-    color: #fff;
+    color: #FF7C00;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -385,8 +385,9 @@ hr{
     margin-right: 0;
 }
 .btn:hover{
-    background-color: #23b7a4;
+    background-color: #FF7C00;
     border: none;
+    color: #fff;
     transition: 0.2s linear;
 }
 .contact_btn:hover{
