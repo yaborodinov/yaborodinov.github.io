@@ -77,7 +77,10 @@ modal.addEventListener("click", function (e) {
 })
 
 // slider
-$(".slider-block").slick()
+$(".slider-block").slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+})
 
 
 
